@@ -1,6 +1,24 @@
+import styles from '../styles/Nav.module.css'
+import Link from 'next/link'
+
 const Nav = () => {
   return (
-    <div>This is a nav component</div>
+    <>
+      <div className={styles.nav}>
+        <ul>
+          <li>
+            <Link href="/about">
+              About
+            </Link>
+          </li>
+          <li>
+            <Link href="/about">
+              Blog
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </>
   )
 }
 
