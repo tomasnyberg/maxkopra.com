@@ -1,7 +1,20 @@
+import Nav from './Nav'
+import Header from './Header'
+import styles from '../styles/Layout.module.css'
 
-const Layout = () => {
+const Layout = ({children}) => {
   return (
-    <div>Layout</div>
+    <>
+      <Nav></Nav>
+      <div className={styles.container}>
+        <main className={styles.main}>
+          <Header>
+            
+          </Header>
+          {children}
+        </main>
+      </div>
+    </>
   )
 }
 
