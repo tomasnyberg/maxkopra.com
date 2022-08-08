@@ -9,9 +9,6 @@ const Layout = ({children}) => {
       <Nav></Nav>
       <div>
         <main className={LayoutStyles.main}>
-          <Header>
-            
-          </Header>
           {children}
         </main>
           <Footer/>
