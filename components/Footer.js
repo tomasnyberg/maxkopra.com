@@ -2,7 +2,11 @@ import styles from '../styles/Footer.module.css'
 
 const Footer = () => {
   return (
-    <div>This is a Footer component</div>
+    <div className={styles.footer}>
+      <h3 className={styles.footertext}>
+        Sign up for the newspaper (Coming soon)
+      </h3>
+    </div>
   )
 }
 
