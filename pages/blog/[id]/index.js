@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 import {  getAllPostIds, getPostData } from '../../../lib/posts'
-import Head from 'next/head'
+import Meta from '../../../components/Meta'
 
 const BlogPost = ({postData}) => {
 
@@ -10,9 +10,7 @@ const BlogPost = ({postData}) => {
 
   return (
     <>
-      <Head>
-        <title>{postData.title}</title>
-      </Head>
+      <Meta title={postData.title}></Meta>
       <h2>{postData.title}
       </h2>
       <h3>{postData.date}</h3>
