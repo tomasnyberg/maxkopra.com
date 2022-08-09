@@ -13,9 +13,12 @@
     padding: 0;
     margin: 0;
     list-style-type: none;
+    height: 100%;
 }
 
 .nav ul li {
+    display: flex;
+    align-items: center;
     margin-left: 3rem;
     margin-right: 3rem;
 }
@@ -24,4 +27,15 @@
     color: rgb(33, 33, 33);
     text-decoration: none;
     font-size: 1.2rem;
+    font-weight: 400;
+    height:100%;
+    padding: 1rem 1rem;
+    transition: 0.35s;
+    /* background-color: red; */
+}
+
+.link:hover {
+    transition: 0.35s;
+    background-color: rgb(169, 169, 169);
+    cursor: pointer;
 }

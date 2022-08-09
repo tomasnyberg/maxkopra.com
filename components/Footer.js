@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className={styles.footer}>
       <h3 className={styles.footertext}>
-        Sign up for the newspaper (Coming soon)
+        Sign up for the newsletter (Coming soon)
       </h3>
     </div>
   )
