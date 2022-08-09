@@ -13,12 +13,18 @@ const BlogPost = ({postData}) => {
       <Head>
         <title>{postData.title}</title>
       </Head>
-      <h2>{postData.title}</h2>
+      <h2>{postData.title}
+      </h2>
       <h3>{postData.date}</h3>
+        <span> {Math.ceil(postData.wordcount/200)} minute read</span>
       <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       <Link href="/">Go back</Link>
     </>
   )
+}
+
+function removeHTML(str){ 
+    return str.replace(/<[^>]+>/g, '')
 }
 
 export async function getStaticPaths() {
@@ -31,7 +37,10 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id)
-  console.log(postData)
+  let filtered = removeHTML(postData.contentHtml)
+  // split the filtered line into an array of words and newline characters and filter out empty strings
+  let words = filtered.split(/\s+|\n/).filter(Boolean)
+  postData.wordcount = words.length
   return {
     props: {
       postData
