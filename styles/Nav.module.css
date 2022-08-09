@@ -24,14 +24,13 @@
 }
 
 .link {
-    color: rgb(33, 33, 33);
+    color: rgb(44, 44, 44);
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 400;
     height:100%;
     padding: 1rem 1rem;
     transition: 0.35s;
-    /* background-color: red; */
 }
 
 .link:hover {

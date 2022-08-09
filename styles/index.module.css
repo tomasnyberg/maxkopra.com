@@ -1,4 +1,30 @@
-.blogtitle {
+.blogheader {
     font-style: italic;
     font-weight: 300;
+    border-bottom: 1px solid black;
+}
+
+.blogtitle {
+    font-size: 26px;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: .2rem;
+    margin-top: 1rem;
+}
+
+.blogtitle:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.blogsubtitle {
+    font-weight: 200;
+    margin-bottom: .5rem;
+    margin-top: 0;
+}
+
+.blogdate {
+    font-style: italic;
+    margin-bottom: 0;
+    margin-top: 0;
 }
