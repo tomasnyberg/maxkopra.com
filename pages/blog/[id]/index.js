@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router'
 import Link from 'next/link'
-import { getSortedPostsData, getAllPostIds, getPostData } from '../../../lib/posts'
+import {  getAllPostIds, getPostData } from '../../../lib/posts'
+import Head from 'next/head'
 
 const BlogPost = ({postData}) => {
 
@@ -9,7 +10,12 @@ const BlogPost = ({postData}) => {
 
   return (
     <>
-      <h3>{postData.title}</h3>
+      <Head>
+        <title>{postData.title}</title>
+      </Head>
+      <h2>{postData.title}</h2>
+      <h3>{postData.date}</h3>
+      <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       <Link href="/">Go back</Link>
     </>
   )
@@ -24,7 +30,8 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const postData = getPostData(params.id)
+  const postData = await getPostData(params.id)
+  console.log(postData)
   return {
     props: {
       postData
