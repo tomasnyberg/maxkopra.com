@@ -1,5 +1,6 @@
 ---
 title: "Lorem ipsum"
+subtitle: "this is a subtitle"
 date: "2020-02-15"
 ---
 
