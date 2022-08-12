@@ -1,3 +1,6 @@
-## This is a (WIP) blog site I am making for my friend, Max Kopra. It will be available at maxkopra.com in the near future.
+## This is a (WIP) blog site I am building for my friend, Max Kopra. Available at maxkopra.com
+___
+I have deployed the site through Vercel, currently using only next.js for development to avoid unnecessary overhead. 
+___
 
-### I will be hosting the project on Vercel, and develop it using only NextJS for now to not add any unncessary overhead.
+The entire app is statically generated with NextJS getStaticProps/getStaticPaths features, leading to very fast load times and good SEO.
