@@ -7,13 +7,13 @@
 .dark {
   background: black;
   color:white;
-  transition: .35s;
+  transition: .25s;
 }
 
 .light {
   background: white;
   color:black;
-  transition: .35s;
+  transition: .25s;
 }
 
 .main {
@@ -24,7 +24,7 @@
   flex-direction: column;
   align-items: center;
   /* slow transition */
-  transition: .35s;
+  transition: .25s;
 }
 
 .darkmodebutton {

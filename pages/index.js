@@ -10,9 +10,8 @@ export default function Home({posts}) {
 
   return (
     <div>
-      <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, ipsa!</h2>
+      <h2 className={`${styles.blogheader} ${darkmode ? styles.darkblogheader:styles.lightblogheader}`}>Blog</h2>
       <section>
-        <h2 className={`${styles.blogheader} ${darkmode ? styles.darkblogheader:styles.lightblogheader}`}>Recent posts</h2>
         {posts.map(({title, subtitle, date, id}) => {
           return (
             <div className={styles.blog} key={id}>
@@ -20,7 +19,7 @@ export default function Home({posts}) {
                 <h3 className={styles.blogtitle}>{title}</h3>
               </Link>
               <h4 className={styles.blogsubtitle}>{subtitle}</h4>
-              <h5 className={styles.blogdate}>{date}</h5>
+              <p className={styles.blogdate}>{date}</p>
             </div>
           )
         })}

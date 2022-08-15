@@ -8,7 +8,7 @@ The entire app is statically generated with NextJS getStaticProps/getStaticPaths
 ___
 
 ### TODO:
-[ ] Make the navbar links wrap around on small screen sizes
+[X] Make the navbar links wrap around on small screen sizes
 [ ] Change about page to match the design
 [ ] Add books page
 [ ] Add editing page
