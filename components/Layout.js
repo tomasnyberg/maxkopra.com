@@ -3,13 +3,20 @@ import Footer from './Footer'
 import Meta from './Meta'
 import LayoutStyles from '../styles/Layout.module.css'
 import '../styles/Layout.module.css'
-import { createContext, useState } from 'react'
+import { createContext, useEffect, useState } from 'react'
 import {WiMoonAltThirdQuarter} from 'react-icons/wi'
 
 export const darkmodeContext = createContext(false)
 
 const Layout = ({children}) => {
   const [darkmode, setdarkmode] = useState(false)
+  useEffect(() => {
+    const prefersDark = window.matchMedia(
+    "(prefers-color-scheme: dark)"
+    ).matches;
+    setdarkmode(prefersDark)
+  }, []) 
+  
 
   const toggleDarkmode = () => {
     setdarkmode(!darkmode)

@@ -9,8 +9,13 @@ ___
 
 ### TODO:
 [X] Make the navbar links wrap around on small screen sizes
+
 [X] Change about page to match the design
+
 [X] Add books page
+
 [X] Add editing page
-[ ] Make colors match those of the design
-[ ] Make app check users preference for dark mode through css property
+
+[X] Make colors match those of the design
+
+[X] Make app check users preference for dark mode through css property
