@@ -22,3 +22,26 @@
   flex-direction: column;
   align-items: center;
 }
+
+.darkmodebutton {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  border: black 1px solid;
+  color:black;
+  background-color: white;
+  border-radius: 10%;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 0.5rem 0.5rem;
+  transition: 0.35s;
+}
+
+.darkdarkmodebutton:hover {
+  background-color: lightgray;
+}
+
+.lightdarkmodebutton:hover {
+  background-color: lightgray;
+}
