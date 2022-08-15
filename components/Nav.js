@@ -5,12 +5,11 @@ import { darkmodeContext } from './Layout'
 
 const Nav = () => {
 
-  const { darkmode, toggleDarkmode } = useContext(darkmodeContext)
+  const { darkmode } = useContext(darkmodeContext)
 
   return (
     <>
       <div className={`${styles.nav} ${darkmode ? styles.dark:styles.light}`}>
-        <button onClick={toggleDarkmode}>asdf</button>
         <ul>
           <Link  href="/about">
             <li className={styles.link}>
