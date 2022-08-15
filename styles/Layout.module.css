@@ -1,6 +1,15 @@
 .container {
   padding: 0 0rem;
   overflow: hidden;
+  /* background: black; */
+}
+
+.dark {
+  background: black;
+}
+
+.light {
+  background: white;
 }
 
 .main {
