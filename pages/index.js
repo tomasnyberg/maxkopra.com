@@ -1,13 +1,18 @@
 import Link from "next/link"
 import { getSortedPostsData } from "../lib/posts"
 import styles from '../styles/index.module.css'
+import { useContext } from 'react'
+import { darkmodeContext } from '../components/Layout'
 
 export default function Home({posts}) {
+  
+  const { darkmode } = useContext(darkmodeContext)
+
   return (
     <div>
       <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, ipsa!</h2>
       <section>
-        <h2 className={styles.blogheader}>Recent posts</h2>
+        <h2 className={`${styles.blogheader} ${darkmode ? styles.darkblogheader:styles.lightblogheader}`}>Recent posts</h2>
         {posts.map(({title, subtitle, date, id}) => {
           return (
             <div className={styles.blog} key={id}>
