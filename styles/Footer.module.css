@@ -3,10 +3,20 @@
     align-items: center;
     width: 100%;
     height: 50px;
-    background-color: #765555;
+}
+
+.light {
+    background: rgb(176, 176, 176);
+    color:black
+}
+
+.dark {
+    background: #373737;
+    color: white;
 }
 
 .footertext {
+    font-size: large;
+    font-weight: 400;
     margin-left: 1rem;
-    color: rgb(169, 169, 169);
 }
