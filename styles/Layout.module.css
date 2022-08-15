@@ -17,7 +17,8 @@
 }
 
 .main {
-  margin: 3rem;
+  margin-left: 18rem;
+  margin-right: 18rem;
   margin-top: 0;
   min-height: 100vh;
   padding: 1rem 1.5rem;
@@ -27,6 +28,14 @@
   align-items: center;
   /* slow transition */
   transition: .25s;
+}
+
+/* Make margin smaller on medium sized screens */
+@media (max-width: 1200px) {
+  .main {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
 }
 
 @media (max-width: 768px) {
