@@ -1,3 +1,18 @@
 .pfp {
     border-radius: 100%;
+    animation-name: color;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes color {
+  0% {
+    background-color: inherit;
+  }
+  50% {
+    background-color: #444;
+  }
+  100% {
+    background-color: inherit;
+  }
 }
