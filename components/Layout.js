@@ -9,7 +9,7 @@ import {WiMoonAltThirdQuarter} from 'react-icons/wi'
 export const darkmodeContext = createContext(false)
 
 const Layout = ({children}) => {
-  const [darkmode, setdarkmode] = useState(false)
+  const [darkmode, setdarkmode] = useState(true)
   useEffect(() => {
     const prefersDark = window.matchMedia(
     "(prefers-color-scheme: dark)"

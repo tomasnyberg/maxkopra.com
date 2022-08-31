@@ -47,3 +47,16 @@
     text-decoration: underline;
     cursor: pointer;
 }
+
+@media (max-width: 380px) {
+    .link {
+        padding: 0.5rem 0.5rem;
+    }
+}
+
+/* On screen sizes smaller than 300 pixels, make the text slightly smaller*/
+@media (max-width: 320px) {
+    .link {
+        font-size: 1rem;
+    }
+}
