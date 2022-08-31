@@ -34,7 +34,7 @@ const Layout = ({children}) => {
           </main>
             <Footer/>
         </div>
-        <WiMoonAltThirdQuarter size="1.5em"
+        <WiMoonAltThirdQuarter size="1.3em"
          onClick={toggleDarkmode}
         className={`${LayoutStyles.darkmodebutton} ${darkmode ? LayoutStyles.darkdarkmodebutton:LayoutStyles.lightdarkmodebutton}`}/>
       </div>
