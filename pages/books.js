@@ -10,9 +10,11 @@ const books = () => {
       <Meta title="Books"></Meta>
       <h1 className={styles.booktitle}>WIP #1</h1>
       <Image className={styles.coverart} width="200px" height="200px" src={comingsoon}></Image>
-      <p>The fields are burning.</p>
-      <p>War tears the land apart.</p>
-      <p>The sun sets, and the dragon comes...</p>
+      <div className={styles.trailertext}>
+        <p>The fields are burning.</p>
+        <p>War tears the land apart.</p>
+        <p>The sun sets, and the Dragon comes...</p>
+      </div>
       <Link href="/">Go back</Link>
     </>
   )

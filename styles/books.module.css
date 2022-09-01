@@ -8,6 +8,10 @@
     animation-iteration-count: infinite;
 }
 
+.trailertext {
+  text-align: center;
+}
+
 @keyframes color {
   0% {
     background-color: inherit;
