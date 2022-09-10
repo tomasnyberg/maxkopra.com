@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Meta from '../components/Meta'
 import styles from '../styles/about.module.css'
 import Image from 'next/image'
-import maxPic from '../public/max2.PNG'
+import maxPic from '../public/maxprofessionalcrop.png'
 
 const about = () => {
   return (
