@@ -1,0 +1,6 @@
+/* For smaller screens less than 400px, center text */
+@media screen and (max-width: 400px) {
+    .headertext {
+        text-align: center;
+    }
+}
